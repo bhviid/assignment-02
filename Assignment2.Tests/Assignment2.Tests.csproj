@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Assignment2.Lib\Assignment2.Lib.csproj" />
     <ProjectReference Include="..\Assignment2\Assignment2.csproj" />
   </ItemGroup>
 

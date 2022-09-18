@@ -1,0 +1,12 @@
+﻿IEnumerable<T> Flatten<T>(this IEnumerable<IEnumerable<T>> items);
+
+IEnumerable<T> Filter<T>(this IEnumerable<T> items, Predicate<T> predicate);
+
+xs.Flatten();
+ys.Filter(x => x % 7 == 0 && x > 42); 
+ys.Filter(x => x % 4 == 0);
+
+
+Func<string> reverseString = s => Console.WriteLine(s.Reverse();
+Func<Decimal,Decimal,Decimal> Product = (d1, d2) => d1 * d2; 
+Func<int,string,bool> IsEqual = (i, s) => int.TryParse(s, out var x) ? i == x : throw new exception("Invalid Input"); 
