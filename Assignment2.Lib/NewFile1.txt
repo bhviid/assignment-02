@@ -1,12 +1,15 @@
-﻿IEnumerable<T> Flatten<T>(this IEnumerable<IEnumerable<T>> items);
+﻿Class: Reference type
+Struct: Value type, used for making a custom data type. An example could be an Employee struct that has all the data for an employee
+Record: Immutable, has an value based equality check
+Record Class: Can have inheritance
+Record Struct: Can not have inheritance
 
-IEnumerable<T> Filter<T>(this IEnumerable<T> items, Predicate<T> predicate);
 
 xs.Flatten();
 ys.Filter(x => x % 7 == 0 && x > 42); 
 ys.Filter(x => x % 4 == 0);
 
 
-Func<string> reverseString = s => Console.WriteLine(s.Reverse();
+Func<string> reverseString = s => Console.WriteLine(s.Reverse());
 Func<Decimal,Decimal,Decimal> Product = (d1, d2) => d1 * d2; 
 Func<int,string,bool> IsEqual = (i, s) => int.TryParse(s, out var x) ? i == x : throw new exception("Invalid Input"); 

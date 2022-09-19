@@ -11,7 +11,7 @@ public class StudentTest
     }
 
     [Fact]
-    public void ImmutableStudentTest()
+    public void ImmutableStudent_EqualityTest()
     {
         DateTime time = DateTime.Now;
         ImmutableStudent s1 = new ImmutableStudent(1, "John", "Doe", Status.Dropout, time.AddYears(-10), time.AddMonths(-119), default);
@@ -21,7 +21,7 @@ public class StudentTest
         Assert.Equal(s1,s2);
     }
     [Fact]
-    public void ImmutableStudentTest2()
+    public void ImmutableStudent_ToStringTest()
     {
         DateTime time = DateTime.Now; 
         Console.WriteLine(new ImmutableStudent(1, "John", "Doe", Status.Dropout, time.AddYears(-10), time.AddMonths(119), default).ToString());

@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace Assignment2;
 
 public static class Extensions
@@ -17,10 +19,8 @@ public static class Extensions
     public static int WordCount(this string s)
     {
         int count;
-        var strings = s.Split(" ");
-        foreach (var stringPart in strings)
-        {
-            if(stringPart.Contains)
-        } 
+        Regex r = new Regex("[a-zA-Z]+");
+        count = r.Matches(s).Count;
+        return count;
     }
 }
